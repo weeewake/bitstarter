@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
   fileContents = fs.readFileSync('./index.html');
 
   if (fileContents) {
-  	response.send(fileContents);	
+  	response.send(fileContents.toString());	
   }
 
 //  response.send('Hello World 2!');
